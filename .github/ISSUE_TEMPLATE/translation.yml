@@ -1,0 +1,75 @@
+name: Translation Issue
+title: "[Translation]: "
+description: Report a problem with English or Portuguese translations
+labels:
+  - translation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report translation errors, missing translations, or inconsistencies between locales (`en-us` and `pt-br`).
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of issue
+      options:
+        - Incorrect translation
+        - Missing translation
+        - Inconsistency between locales
+        - Grammar or wording improvement
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Affected locale
+      options:
+        - English (en-us)
+        - Portuguese (pt-br)
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL or section
+      placeholder: https://docs.example.com/pt-br/components/button
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current text
+      description: Copy the text as it appears on the site.
+      placeholder: Paste the current translation here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-text
+    attributes:
+      label: Suggested text
+      description: What should it say instead? Leave blank if you are only reporting a missing translation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, reference links, or notes that help clarify the issue.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate
+          required: true

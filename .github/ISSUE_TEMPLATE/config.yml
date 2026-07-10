@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Component library issues
+    url: https://github.com/Bridge-UI/core/issues/new
+    about: Report bugs or feature requests for the React/Vue component library (not the documentation site)

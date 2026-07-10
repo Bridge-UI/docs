@@ -1,0 +1,45 @@
+name: Question
+title: "[Question]: "
+description: Ask a question about the documentation site
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template if you have a question about how to use or navigate the documentation site.
+
+        For **component library usage questions**, consider opening an issue in [Bridge-UI/core](https://github.com/Bridge-UI/core/issues) or checking the docs directly.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+      placeholder: Is there a page that explains how the React/Vue switcher works across the site?
+    validations:
+      required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Related page (if any)
+      placeholder: https://docs.example.com/en-us/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that helps us understand your question.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and the documentation before asking
+          required: true

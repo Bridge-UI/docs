@@ -1,0 +1,73 @@
+name: Documentation Improvement
+title: "[Docs]: "
+description: Suggest missing, unclear, or outdated documentation
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to suggest improvements to the documentation content or structure.
+
+        For **component library bugs** or API changes, open an issue in [Bridge-UI/core](https://github.com/Bridge-UI/core/issues) instead.
+
+  - type: dropdown
+    id: improvement-type
+    attributes:
+      label: Type of improvement
+      options:
+        - Missing documentation
+        - Unclear or confusing content
+        - Outdated information
+        - Broken link or example
+        - Accessibility or UX feedback
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL or section
+      description: Link to the relevant page, or the section/component name.
+      placeholder: https://docs.example.com/en-us/components/modal
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem or gap?
+      description: Describe what is missing, unclear, or wrong.
+      placeholder: The Modal page does not explain how to use ModalAction imperatively.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: How would you improve the documentation?
+      placeholder: Add a section with an example showing ModalAction.open() usage in React and Vue.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework (if applicable)
+      options:
+        - React
+        - Vue
+        - Both
+        - Not applicable
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate
+          required: true
