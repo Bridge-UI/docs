@@ -1,17 +1,26 @@
-<p align="center"><img src="#" height="100"></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Bridge-UI/docs/main/assets/logo.svg" height="100" alt="Bridge UI logo">
+</p>
 
 <h2><p align="center">Bridge UI Docs</p></h2>
+
+<p align="center">
+<a href="https://github.com/Bridge-UI/core/actions"><img src="https://github.com/Bridge-UI/core/actions/workflows/ci.yml/badge.svg" alt="Tests"></a>
+<a href="LICENSE.md"><img src="https://img.shields.io/github/license/Bridge-UI/core" alt="License" /></a>
+</p>
 
 ### 🚀 Introduction
 
 Public issue tracker for the [Bridge UI](https://github.com/Bridge-UI/core) documentation site — a component library for **React** and **Vue** with a shared foundation in `@bridge-ui/core`.
 
-The documentation site is built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). Its source code is maintained in a private repository. **This public repository exists so anyone can report bugs, suggest improvements, or ask questions about the docs** without needing access to the codebase.
+The documentation site is built with [Astro](https://astro.build), [Tailwind CSS](https://tailwindcss.com) and Bridge UI components. Its source code is maintained in a private repository. **This public repository exists so anyone can report bugs, suggest improvements, or ask questions about the docs** without needing access to the codebase.
 
 #### 🔥 What the documentation site includes:
 
+- Docs written in **MDX**, rendered with custom Astro layouts and Bridge UI components
 - **CodeBlock** for framework-aware source snippets
 - Global **React / Vue** selector (persisted in `localStorage`)
+- Full-text search powered by **Pagefind**
 - Locales: **English** (`en-us`) and **Portuguese** (`pt-br`)
 
 ### 🐛 Reporting issues
@@ -39,9 +48,9 @@ Feature requests and content improvements are welcome here. Examples:
 
 ### 🔗 References
 
+- [Bridge UI](https://github.com/Bridge-UI/core)
 - [Astro documentation](https://docs.astro.build)
-- [Starlight documentation](https://starlight.astro.build)
-- [Bridge UI (core library)](https://github.com/Bridge-UI/core)
+- [Tailwind CSS documentation](https://tailwindcss.com/docs)
 
 ### 📝 License
 
