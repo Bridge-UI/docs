@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <style>
+    .span { stroke: #0d9488; } /* teal-600 */
+    .deck { stroke: #f59e0b; } /* amber-500 */
+    @media (prefers-color-scheme: dark) {
+      .span { stroke: #2dd4bf; } /* teal-400 */
+      .deck { stroke: #fbbf24; } /* amber-400 */
+    }
+  </style>
+  <!-- Bridge span -->
+  <path class="span" d="M 15 40 A 17 17 0 0 1 49 40" stroke-width="6" stroke-linecap="round" />
+  <!-- Bridge deck -->
+  <line class="deck" x1="20" y1="51" x2="44" y2="51" stroke-width="6" stroke-linecap="round" />
+</svg>

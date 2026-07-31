@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Bridge span -->
+  <path d="M 15 40 A 17 17 0 0 1 49 40" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round" />
+  <!-- Bridge deck -->
+  <line x1="20" y1="51" x2="44" y2="51" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" />
+</svg>
